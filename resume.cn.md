@@ -35,9 +35,23 @@ Frontend Developer (Intern)
 
 Hangzhou, China | May. 2025 -- Aug. 2025
 
-- 在七人前端中使用 TypeScript、React 和 Ant Design， 为 Electron-based enterprise cybersecurity application 开发 new front-end features， 并为 admin web console 实现 UI functions。
-- 使用 Cursor (AI IDE)， 通过 advanced prompt engineering methodologies 优化 coding workflows。
-- 遵循 standardized development workflows， 包括 Gitflow branching （在 QA 和 pre-production 环境解决 merges 和 conflicts）、 GitHub Pull Requests with assigned reviewers and feedback resolution， 以及在 Alibaba Cloud (Yunxiao) 上执行 CI/CD integration testing， 确保 build consistency。
+- 参与基于 Electron、TypeScript 和 React 的 Windows 企业安全客户端启动与登录界面重写，使用 HeroUI 和 Tailwind CSS 实现团队选择、账户登录及团队权限与配置加载等前端步骤。
+- 使用 React 和 Ant Design 为内部 Web 管理控制台添加功能，通过 Git 和内网部署的 GitLab 进行协作。
+
+<!--
+Private context for future resume edits; exclude from application resumes.
+This was my first internship. The Windows client paired a user-level Electron
+frontend with an SDK-backed service running with administrator privileges.
+On first launch, the service was not yet running persistently. After team
+selection, account sign-in, and retrieval of the team's permissions and
+configuration, the Electron client needed to start the privileged service
+before entering the main screen. I was primarily responsible for rewriting
+the frontend startup and sign-in flow and completed roughly 80%; unresolved
+bugs required my supervisor to step in and finish/fix the implementation.
+Do not describe this as an independently delivered end-to-end login or
+privileged-service implementation. Other tools used included Bun, Node.js,
+Cursor, and Claude Code.
+-->
 
 ## 个人项目
 

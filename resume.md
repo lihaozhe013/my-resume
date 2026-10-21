@@ -10,7 +10,7 @@ B.A.Sc in Computer Engineering + PEY Co-op
 
 Toronto, ON, Canada | Sep. 2023 -- Apr. 2028 (Expected)
 
-Relevant Coursework: Communication Systems, Digital Systems, Computer Hardware, Computer Graphics, Operating Systems, Algorithms & Data Structures, Introduction to Databases, Computer Organization, Applied Fundamentals of Deep Learning
+Relevant Coursework: Communication Systems, Digital Systems, Computer Hardware, Operating Systems, Computer Organization, Algorithms & Data Structures, Introduction to Databases
 
 ## Technical Skills
 
@@ -32,9 +32,23 @@ ZeroLab Technology Co., Ltd. | Shanghai, China | Jun. 2026 -- Jun. 2027
 
 Hangzhou EagleCloud Cybersecurity Technology Inc. | Hangzhou, China | May. 2025 -- Aug. 2025
 
-- Developed new front-end features for an Electron-based enterprise cybersecurity application and implemented UI functions for an admin web console. Utilized TypeScript, React, Ant Design, within a 7-person front-end team.
-- Utilized Cursor (AI IDE), optimized coding workflows by applying advanced prompt engineering methodologies.
-- Worked within standardized development workflows, including Gitflow branching (resolving merges and conflicts across QA and pre-production), GitHub Pull Requests with assigned reviewers and feedback resolution, and CI/CD integration testing on Alibaba Cloud (Yunxiao) for build consistency.
+- Contributed to the startup and sign-in UI rewrite for a Windows enterprise cybersecurity client built with Electron, TypeScript, and React. Implemented frontend steps for team selection, authentication, and loading team-specific permissions and configuration, using HeroUI and Tailwind CSS.
+- Added features to an internal web administration console using React and Ant Design, collaborating through Git and a self-hosted GitLab instance.
+
+<!--
+Private context for future resume edits; exclude from application resumes.
+This was my first internship. The Windows client paired a user-level Electron
+frontend with an SDK-backed service running with administrator privileges.
+On first launch, the service was not yet running persistently. After team
+selection, account sign-in, and retrieval of the team's permissions and
+configuration, the Electron client needed to start the privileged service
+before entering the main screen. I was primarily responsible for rewriting
+the frontend startup and sign-in flow and completed roughly 80%; unresolved
+bugs required my supervisor to step in and finish/fix the implementation.
+Do not describe this as an independently delivered end-to-end login or
+privileged-service implementation. Other tools used included Bun, Node.js,
+Cursor, and Claude Code.
+-->
 
 ## Projects
 
