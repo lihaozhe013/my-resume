@@ -111,8 +111,6 @@ C, RISC-V, FPGA Board, CPUlator | Mar. 2025
 
 开源项目
 
-TypeScript, Node.js, PostgreSQL, React | Jul. 2025 -- Present
+TypeScript, Bun, PostgreSQL, React, AI Native | Jul. 2025 -- Present
 
-- 设计 full-stack trade management solution， 包含 inventory 和 financial tracking 以及 sales analysis。
-- 使用 TypeScript、Node.js 和 PostgreSQL 构建 high-performance backend。
-- 使用 React 和 Ant Design 开发 responsive frontend， 采用 component-driven architecture 加速 feature delivery 并保持 code reusability。
+开发覆盖采购、销售、库存及应收应付的开源贸易管理系统，为一家小公司完成定制与私有化部署。通过 AI Native 工作流辅助员工查询业务数据、生成待审核的录入草稿，为客户节省相当于一名财务人员薪资的人力成本。交付可用于日常经营的完整系统，并通过自动化测试与交付持续响应业务需求，在高频迭代的同时保持系统稳定运行。

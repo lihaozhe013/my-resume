@@ -91,10 +91,8 @@ Mar. 2025
 - Built a lightweight, OS-independent 2D graphics engine capable of rendering color images, animations, and text at up to 60 FPS.
 - Developed a basic square wave synthesizer to enable dynamic sound effects during gameplay events such as scoring and game completion.
 
-### TradeFlow System (Open Source) | TypeScript, Node.js, PostgreSQL, React
+### TradeFlow System (Open Source) | TypeScript, Bun, PostgreSQL, React, AI Native
 
 Jul. 2025 -- Present
 
-- Architected a full-stack trade management solution, featuring inventory and financial tracking plus sales analysis.
-- Engineered a high-performance backend using Typescript, Node.js and PostgreSQL.
-- Developed a responsive frontend with React and Ant Design, adopting a component-driven architecture to accelerate feature delivery and maintain code reusability.
+Built an open-source trade management system covering purchasing, sales, inventory, and receivables/payables, customized and privately deployed for a small business. Its AI Native workflow helps staff query business data and prepare entries for review, saving the business labor costs equivalent to one finance employee's salary. Delivered a complete system for daily operations, with automated testing and delivery supporting frequent updates as business needs evolve while maintaining stable service.
