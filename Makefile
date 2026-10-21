@@ -1,36 +1,22 @@
-.PHONY: all compile clean format cn
+.PHONY: default all compile clean format cn
+
+SOFTWARE_DIR := software
+CN_DIR := $(SOFTWARE_DIR)/cn
 
 default: compile
 
 clean:
-	rm -f $(TARGET_FILE).aux \
-		$(TARGET_FILE).log \
-		$(TARGET_FILE).out \
-		$(TARGET_FILE).toc \
-		$(TARGET_FILE).nav \
-		$(TARGET_FILE).snm \
-		$(TARGET_FILE).dvi \
-		$(TARGET_FILE).ps \
-		$(TARGET_FILE).bbl \
-		$(TARGET_FILE).blg \
-		$(TARGET_FILE).fls \
-		$(TARGET_FILE).fdb_latexmk \
-		$(TARGET_FILE).gz \
-		$(TARGET_FILE).idx \
-		$(TARGET_FILE).ilg \
-		$(TARGET_FILE).ind
-	rm -f $(TARGET_FILE).pdf
-	find . -regextype posix-extended -regex '.*\.'$(TEMP_FILES_SUFFIX)'$$' -delete
-	@echo "Cleanup finished."
+	uv run python -c "from pathlib import Path; suffixes = '.aux .log .out .toc .nav .snm .dvi .ps .bbl .blg .fls .fdb_latexmk .gz .idx .ilg .ind .pdf .synctex.gz'.split(); [p.unlink(missing_ok=True) for d in ('$(SOFTWARE_DIR)', '$(CN_DIR)') for s in suffixes for p in [Path(d) / ('resume' + s)]]"
+	@echo Cleanup finished.
 
 format:
 	uv run format.py
 
 compile:
-	pdflatex resume.tex
+	cd $(SOFTWARE_DIR) && pdflatex -interaction=nonstopmode -halt-on-error resume.tex
 
 cn:
-	cd cn && xelatex resume.tex && xelatex resume.tex
+	cd $(CN_DIR) && xelatex -interaction=nonstopmode -halt-on-error resume.tex && xelatex -interaction=nonstopmode -halt-on-error resume.tex
 
 all:
-	pdflatex resume.tex && pdflatex resume.tex && pdflatex resume.tex
+	cd $(SOFTWARE_DIR) && pdflatex -interaction=nonstopmode -halt-on-error resume.tex && pdflatex -interaction=nonstopmode -halt-on-error resume.tex && pdflatex -interaction=nonstopmode -halt-on-error resume.tex
